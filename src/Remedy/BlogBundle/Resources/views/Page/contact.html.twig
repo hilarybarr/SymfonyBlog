@@ -1,0 +1,29 @@
+{% extends 'RemedyBlogBundle::base.html.twig' %}
+
+{% block title %}Contact{% endblock%}
+
+{% block body %}
+    <header>
+        <h1>Contact Remedy Partners</h1>
+    </header>
+
+
+
+    <p>Want to contact Remedy Partners?</p>
+
+
+    <form action="{{ path('RemedyBlogBundle_contact') }}" method="post" {{ form_enctype(form) }} class="blogger">
+        {{ form_errors(form) }}
+
+        {{ form_row(form.name) }}
+        {{ form_row(form.email) }}
+        {{ form_row(form.subject) }}
+        {{ form_row(form.body) }}
+
+        {{ form_rest(form) }}
+
+        <input type="submit" value="Submit" />
+    </form>
+
+
+{% endblock %}

@@ -1,0 +1,3 @@
+RemedyBlogBundle:
+    resource: "@RemedyBlogBundle/Resources/config/routing.yml"
+    prefix:   /

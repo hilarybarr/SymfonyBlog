@@ -1,0 +1,54 @@
+<?php
+
+
+namespace Remedy\BlogBundle\Document;
+use Doctrine\ODM\MongoDB\Mapping\Annotations as MongoDB;
+
+/**
+ * @MongoDB\Document
+ */
+class Blog
+{
+    /**
+     * @MongoDB\Id
+     */
+    protected $id;
+
+    /**
+     * @MongoDB\String
+     */
+    protected $title;
+
+    /**
+     * @MongoDB\String
+     */
+    protected $author;
+
+    /**
+     * @MongoDB\String
+     */
+    protected $blog;
+
+    /**
+     * @MongoDB\File
+     */
+    protected $image;
+
+    /**
+     * @MongoDB\String
+     */
+    protected $tags;
+
+    /**
+     * @MongoDB\Timestamp
+     */
+    protected $created;
+
+    /**
+     * @MongoDB\Timestamp
+     */
+    protected $updated;
+
+    
+
+}

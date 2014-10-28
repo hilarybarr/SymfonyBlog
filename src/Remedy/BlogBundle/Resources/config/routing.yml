@@ -1,0 +1,23 @@
+RemedyBlogBundle_homepage:
+    pattern:  /
+    defaults: { _controller: RemedyBlogBundle:Page:index }
+    requirements:
+        _method:  GET
+
+RemedyBlogBundle_about:
+    pattern:  /about
+    defaults: { _controller: RemedyBlogBundle:Page:about }
+    requirements:
+        _method:  GET
+
+RemedyBlogBundle_contact:
+    pattern:  /contact
+    defaults: { _controller: RemedyBlogBundle:Page:contact}
+    requirements:
+        _method:  GET|POST
+
+RemedyBlogBundle_blog_show:
+    pattern:  /{id}
+    defaults: { _controller: RemedyBlogBundle:Blog:show }
+    requirements:
+        _method:  GET
